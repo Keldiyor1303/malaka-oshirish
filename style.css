@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: auto;
+    padding: 0 50px;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.basic {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-auto-rows: 250px;
+    gap: 16px;
+}
+
+.basic>div {
+    position: relative;
+}
+
+.basic>div:nth-child(1) {
+    grid-row: span 2;
+}
+
+.basic>div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.basic>div .info {
+    width: 100%;
+    height: 100px;
+    padding: 0 16px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(2, 138, 133, 0.6)
+}
+
+.directions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 90px;
+    gap: 16px;
+    transition: .3s;
+}
+
+.direction {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .3s;
+    width: 300px;
+    height: 120px;
+}
+
+.direction:hover,
+.directions>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.direction:hover {
+    background-color: rgba(2, 138, 133, 0.2);
+    transform: translateY(-10px);
+}
+
+/* #028A85 */
+
+.info span {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.per-contact {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 50px;
+}
+
+.per-contact a,
+.per-contact span {
+    color: black;
+    margin-left: 8px;
+}
+
+.per-contact .date {
+    display: flex;
+    align-items: flex-start;
+}
+
+.useful-slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.useful-slider span {
+    text-align: justify;
+}
+
+
+.footer-main {
+    background: #028a85;
+    color: #fff;
+}
+
+.box-con {
+    display: flex;
+    gap: 54px;
+}
+
+.contact-box {
+    display: flex;
+    gap: 8px;
+}
+
+.contact-box i {
+    font-size: 36px;
+}
+
+.contact-box a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-social i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.items {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+.slick-slide {
+    margin: 10px;
+}
+
+.slick-slide img {
+    width: 100%;
+    border: 0px solid #fff;
+}
