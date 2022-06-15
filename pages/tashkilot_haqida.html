@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
         type="text/css">
@@ -44,7 +49,7 @@
 
 <body class="bg-white">
     <!-- Main navbar -->
-    <div class="navbar navbar-expand-lg navbar-dark bg-light navbar-static d-flex justify-content-between align-items-center"
+    <!-- <div class="navbar navbar-expand-lg navbar-dark bg-light navbar-static d-flex justify-content-between align-items-center"
         style="padding: 0 100px">
         <div class="navbar-brand text-star">
             <a href="#" class="d-inline-block">
@@ -76,13 +81,77 @@
                     style="width: 20px;"><br>Madhiya</a>
         </div>
 
-    </div>
+    </div> -->
     <!-- /main navbar -->
+
+    <div class="navbar navbar-light navbar-expand-xl">
+        <div class="navbar-brand wmin-0 mr-5">
+            <a href="index.html" class="d-inline-block">
+                <img src="../global_assets/images/logo_dark.png" alt="">
+            </a>
+        </div>
+
+        <div class="d-xl-none">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-demo3-mobile">
+                <i class="icon-grid3"></i>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-demo3-mobile">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="navbar-nav-link">Link</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Action</a>
+                        <a href="#" class="dropdown-item">Another action</a>
+                        <a href="#" class="dropdown-item">Something else here</a>
+                        <a href="#" class="dropdown-item">One more line</a>
+                    </div>
+                </li>
+            </ul>
+
+            <span class="navbar-text ml-xl-3">
+                <span class="badge badge-success align-top">Online</span>
+            </span>
+
+            <ul class="navbar-nav ml-xl-auto">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link">
+                        <i class="icon-bell2"></i>
+                        <span class="d-xl-none ml-2">Notifications</span>
+                        <span class="badge badge-warning badge-pill ml-auto ml-xl-0">2</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link">
+                        <i class="icon-bubbles4"></i>
+                        <span class="d-xl-none ml-2">Messages</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+                        data-toggle="dropdown">
+                        <img src="../global_assets/images/demo/users/face11.jpg" class="rounded-circle mr-2" height="34"
+                            alt="">
+                        <span>Victoria</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Action</a>
+                        <a href="#" class="dropdown-item">Another action</a>
+                        <a href="#" class="dropdown-item">Something else here</a>
+                        <a href="#" class="dropdown-item">One more line</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <div class="my-4" style="padding: 0 50px;">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="logo">
+                <a href="../index.html" class="logo">
                     <!-- <span class="logo__img-wrapp"></span> -->
                     <img src="../images/gerb.png" alt="" style="width: 150px;">
                 </a>
@@ -120,8 +189,8 @@
             </a>
 
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Tashkilot haqida</a></li>
-                <li><a class="dropdown-item" href="#">Rahbariyat</a></li>
+                <li><a class="dropdown-item" href="./tashkilot_haqida.html">Tashkilot haqida</a></li>
+                <li><a class="dropdown-item" href="./rahbariyat.html">Rahbariyat</a></li>
                 <li><a class="dropdown-item" href="#">Axborot-resurz markazi</a></li>
             </ul>
         </div>

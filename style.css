@@ -7,6 +7,7 @@
 body {
     overflow: auto;
     padding: 0 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -166,4 +167,29 @@ body::-webkit-scrollbar {
 
 .yunalish {
     font-size: 18px;
+}
+
+.nav-link:before {
+    content: none !important;
+}
+
+.nav-tabs-highlight .nav-link.active {
+    border-top: 2px solid #028a85 !important;
+}
+
+.basic>div {
+    overflow: hidden;
+}
+
+.basic>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.basic>div img {
+    transition: .3s;
+    cursor: pointer;
+}
+
+.basic>div img:hover {
+    transform: scale(1.2);
 }

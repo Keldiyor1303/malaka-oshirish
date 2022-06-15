@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- Global stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet"
         type="text/css">
@@ -15,6 +20,7 @@
     <link href="./assets/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- /global stylesheets -->
 
+    <link rel="stylesheet" href="../css/carousel.css">
     <link rel="stylesheet" href="./style.css">
 
     <!-- Core JS files -->
@@ -46,7 +52,7 @@
 <body class="bg-white">
 
     <!-- Main navbar -->
-    <div class="navbar navbar-expand-lg navbar-dark bg-light navbar-static d-flex justify-content-between align-items-center"
+    <!-- <div class="navbar navbar-expand-lg navbar-dark bg-light navbar-static d-flex justify-content-between align-items-center"
         style="padding: 0 100px">
         <div class="navbar-brand text-star">
             <a href="#" class="d-inline-block">
@@ -78,13 +84,77 @@
                     style="width: 20px;"><br>Madhiya</a>
         </div>
 
-    </div>
+    </div> -->
     <!-- /main navbar -->
+
+    <div class="navbar navbar-light navbar-expand-xl">
+        <div class="navbar-brand wmin-0 mr-5">
+            <a href="index.html" class="d-inline-block">
+                <img src="../global_assets/images/logo_dark.png" alt="">
+            </a>
+        </div>
+
+        <div class="d-xl-none">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-demo3-mobile">
+                <i class="icon-grid3"></i>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-demo3-mobile">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="navbar-nav-link">Link</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Action</a>
+                        <a href="#" class="dropdown-item">Another action</a>
+                        <a href="#" class="dropdown-item">Something else here</a>
+                        <a href="#" class="dropdown-item">One more line</a>
+                    </div>
+                </li>
+            </ul>
+
+            <span class="navbar-text ml-xl-3">
+                <span class="badge badge-success align-top">Online</span>
+            </span>
+
+            <ul class="navbar-nav ml-xl-auto">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link">
+                        <i class="icon-bell2"></i>
+                        <span class="d-xl-none ml-2">Notifications</span>
+                        <span class="badge badge-warning badge-pill ml-auto ml-xl-0">2</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link">
+                        <i class="icon-bubbles4"></i>
+                        <span class="d-xl-none ml-2">Messages</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+                        data-toggle="dropdown">
+                        <img src="../global_assets/images/demo/users/face11.jpg" class="rounded-circle mr-2" height="34"
+                            alt="">
+                        <span>Victoria</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Action</a>
+                        <a href="#" class="dropdown-item">Another action</a>
+                        <a href="#" class="dropdown-item">Something else here</a>
+                        <a href="#" class="dropdown-item">One more line</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <div class="my-4" style="padding: 0 50px;">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex justify-content-center align-items-center">
-                <a href="#" class="logo">
+                <a href="./index.html" class="logo">
                     <!-- <span class="logo__img-wrapp"></span> -->
                     <img src="./images/gerb.png" alt="" style="width: 150px;">
                 </a>
@@ -519,25 +589,102 @@
                 class="bg-light"></span>
         </div>
 
-        <div class="useful-slider">
-            <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
-                <img src="https://tdi.uz/uploads/icons/useful%20links/62d3491b91fefe65c763ef2f7da6ffa6.png" alt="">
-                <span>O‘zbekiston Respublikasi ochiq ma’lumotlar portali</span>
-            </div>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/62d3491b91fefe65c763ef2f7da6ffa6.png"
+                            alt="">
+                        <span>O‘zbekiston Respublikasi ochiq ma’lumotlar portali</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/lex_uz.png" alt="">
+                        <span>Oʻzbekiston Respublikasi qonun hujjatlari bazasi</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/0195a9e357d5be84eae3fc8751a5f79a.png"
+                            alt="">
+                        <span>O‘zbekiston Respublikasi Prezidentining rasmiy veb-sayti</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/0195a9e357d5be84eae3fc8751a5f79a.png"
+                            alt="">
+                        <span>O‘zbekiston Respublikasi Hukumat portali</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/4b1e902e3af96c82dc5b7d4fe2208a21.png"
+                            alt="">
+                        <span>Yagona interaktiv davlat xizmatlari portali</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://www.lex.uz/assets/img/oliy_majlis.png" alt="">
+                        <span>O‘zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi</span>
+                    </div>
+                </div>
 
-            <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
-                <img src="https://tdi.uz/uploads/icons/useful%20links/62d3491b91fefe65c763ef2f7da6ffa6.png" alt="">
-                <span>O‘zbekiston Respublikasi ochiq ma’lumotlar portali</span>
-            </div>
-
-            <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
-                <img src="https://tdi.uz/uploads/icons/useful%20links/62d3491b91fefe65c763ef2f7da6ffa6.png" alt="">
-                <span>O‘zbekiston Respublikasi ochiq ma’lumotlar portali</span>
-            </div>
-
-            <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
-                <img src="https://tdi.uz/uploads/icons/useful%20links/62d3491b91fefe65c763ef2f7da6ffa6.png" alt="">
-                <span>O‘zbekiston Respublikasi ochiq ma’lumotlar portali</span>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/62d3491b91fefe65c763ef2f7da6ffa6.png"
+                            alt="">
+                        <span>O‘zbekiston Respublikasi ochiq ma’lumotlar portali</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/lex_uz.png" alt="">
+                        <span>Oʻzbekiston Respublikasi qonun hujjatlari bazasi</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/0195a9e357d5be84eae3fc8751a5f79a.png"
+                            alt="">
+                        <span>O‘zbekiston Respublikasi Prezidentining rasmiy veb-sayti</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/0195a9e357d5be84eae3fc8751a5f79a.png"
+                            alt="">
+                        <span>O‘zbekiston Respublikasi Hukumat portali</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/4b1e902e3af96c82dc5b7d4fe2208a21.png"
+                            alt="">
+                        <span>Yagona interaktiv davlat xizmatlari portali</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://www.lex.uz/assets/img/oliy_majlis.png" alt="">
+                        <span>O‘zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://tdi.uz/uploads/icons/useful%20links/4b1e902e3af96c82dc5b7d4fe2208a21.png"
+                            alt="">
+                        <span>Yagona interaktiv davlat xizmatlari portali</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div style="width: 300px; display: flex; gap: 8px; align-items: center;">
+                        <img src="https://www.lex.uz/assets/img/oliy_majlis.png" alt="">
+                        <span>O‘zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
