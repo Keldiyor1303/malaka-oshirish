@@ -46,7 +46,7 @@
 
 <body class="bg-white">
     <!-- Main navbar -->
-    <div class="navbar navbar-expand-lg navbar-dark bg-light navbar-static d-flex justify-content-between align-items-center"
+    <!-- <div class="navbar navbar-expand-lg navbar-dark bg-light navbar-static d-flex justify-content-between align-items-center"
         style="padding: 0 100px">
         <div class="navbar-brand text-star">
             <a href="#" class="d-inline-block">
@@ -78,8 +78,72 @@
                     style="width: 20px;"><br>Madhiya</a>
         </div>
 
-    </div>
+    </div> -->
     <!-- /main navbar -->
+
+    <div class="navbar navbar-dark navbar-expand-xl rounded">
+        <div class="navbar-brand wmin-0 mr-5">
+            <a href="index.html" class="d-inline-block">
+                <img src="../global_assets/images/logo_light.png" alt="">
+            </a>
+        </div>
+
+        <div class="d-xl-none">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-demo3-mobile">
+                <i class="icon-grid3"></i>
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-demo3-mobile">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="navbar-nav-link">Link</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Action</a>
+                        <a href="#" class="dropdown-item">Another action</a>
+                        <a href="#" class="dropdown-item">Something else here</a>
+                        <a href="#" class="dropdown-item">One more line</a>
+                    </div>
+                </li>
+            </ul>
+
+            <span class="navbar-text ml-xl-3">
+                <span class="badge badge-success align-top">Online</span>
+            </span>
+
+            <ul class="navbar-nav ml-xl-auto">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link">
+                        <i class="icon-bell2"></i>
+                        <span class="d-xl-none ml-2">Notifications</span>
+                        <span class="badge badge-warning badge-pill ml-auto ml-xl-0">2</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link">
+                        <i class="icon-bubbles4"></i>
+                        <span class="d-xl-none ml-2">Messages</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a href="#" class="navbar-nav-link d-flex align-items-center dropdown-toggle"
+                        data-toggle="dropdown">
+                        <img src="../global_assets/images/demo/users/face11.jpg" class="rounded-circle mr-2" height="34"
+                            alt="">
+                        <span>Victoria</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Action</a>
+                        <a href="#" class="dropdown-item">Another action</a>
+                        <a href="#" class="dropdown-item">Something else here</a>
+                        <a href="#" class="dropdown-item">One more line</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <div class="my-4" style="padding: 0 50px;">
         <div class="d-flex justify-content-between align-items-center">
@@ -207,54 +271,108 @@
                 class="bg-light"></span>
         </div>
 
-        <div style="background-color: #fff; box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px">
-            <div className='senatorlar p-2 mt-2' style="display: flex;">
-                <img src="https://buxoro.uz/adminpanel/images/pages/2020-11-075fa65a5f57fd67743240320.jpg" alt=""
-                    style="width: 250px; height: 300px; object-fit: cover" />
-
-                <div style="width: 100%; height: 300px; background-color: white">
-                    <div className="p-2 text-light bg-secondary" style="font-size: 18px">ZARIPOV BOTIR KOMILOVICH
+        <div class="rahbariyat">
+            <div>
+                <div
+                    style="display: flex; background-color: #deeceb; padding: 24px; position: relative; overflow: hidden;">
+                    <img src="https://buxoro.uz/adminpanel/images/hokim/hokim.png" alt=""
+                        style="width: 250px; height: 200px;" class="rounded">
+                    <div style="position: absolute; top: 24px; right: -48px; width: calc(100% - 300px)">
+                        <h3 style="background-color: white; font-weight: 600; color: #028A85; font-size: 18px; text-transform: uppercase;"
+                            class="p-3 rounded-pill px-4">
+                            Zaripov Botir Komilovich
+                        </h3>
+                        <p style="font-size: 18px;" class="px-4">Buxoro viloyati hokimi</p>
                     </div>
+                </div>
 
-                    <ul className="list-group" style="border: none; list-style: none;">
-                        <li className="list-group-item list-group-item-action px-2 py-1 d-flex" style="display: flex;">
-                            <span style="width: 50%;">Lavozimi</span>
-                            <span style="width: 50%;">Buxoro viloyat hokimi</span>
+                <div class="card-body">
+                    <ul class="nav nav-tabs nav-tabs-highlight nav-justified">
+                        <li class="nav-item">
+                            <a href="#justified-top-icon-tab1" class="nav-link" data-toggle="tab">
+                                <div style="display: flex; justify-content: center; align-items: center; gap: 8px;">
+                                    <i class="icon-newspaper2" style="font-size: 24px;"></i>
+                                    <p class="m-0 p-0" style="font-size: 24px;">Vazifalari</p>
+                                </div>
+                            </a>
                         </li>
-
-                        <li className="list-group-item list-group-item-action px-2 py-1 d-flex">
-                            <span style="width: 50%;">Partiyaviyligi</span>
-                            <span style="width: 50%;">-</span>
-                        </li>
-
-                        <li className="list-group-item list-group-item-action px-2 py-1 d-flex">
-                            <span style="width: 50%;">Tug'ilgan yili</span>
-                            <span style="width: 50%;"> 20.11.1969</span>
-                        </li>
-
-                        <li className="list-group-item list-group-item-action px-2 py-1 d-flex">
-                            <span style="width: 50%;">Tug'ilgan joyi</span>
-                            <span style="width: 50%;">G`ijduvon tumani</span>
-                        </li>
-
-                        <li className="list-group-item list-group-item-action px-2 py-1 d-flex">
-                            <span style="width: 50%;">Millati</span>
-                            <span style="width: 50%;">O`zbek</span>
-                        </li>
-
-                        <li className="list-group-item list-group-item-action px-2 py-1 d-flex">
-                            <span style="width: 50%;">Ma'lumoti</span>
-                            <span style="width: 50%;">Oliy</span>
-                        </li>
-
-                        <li className="list-group-item list-group-item-action px-2 py-1 d-flex">
-                            <span style="width: 50%;">Telefon raqami</span>
-                            <span style="width: 50%;">-</span>
+                        <li class="nav-item">
+                            <a href="#justified-top-icon-tab2" class="nav-link active" data-toggle="tab">
+                                <div style="display: flex; justify-content: center; align-items: center; gap: 8px;">
+                                    <i class="icon-magazine" style="font-size: 24px;"></i>
+                                    <p class="m-0 p-0" style="font-size: 24px;">Biografiyasi</p>
+                                </div>
+                            </a>
                         </li>
                     </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="justified-top-icon-tab1">
+                            To use in tabs with equal widths add <code>.nav-justified</code> and icon markup to the tab
+                            nav.
+                        </div>
+
+                        <div class="tab-pane fade active show" id="justified-top-icon-tab2">
+                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid
+                            laeggin.
+                        </div>
+
+                    </div>
                 </div>
             </div>
+
+            <div>
+                <div
+                    style="display: flex; background-color: #deeceb; padding: 24px; position: relative; overflow: hidden;">
+                    <img src="https://buxoro.uz/adminpanel/images/hokim/hokim.png" alt=""
+                        style="width: 250px; height: 200px;" class="rounded">
+                    <div style="position: absolute; top: 24px; right: -48px; width: calc(100% - 300px)">
+                        <h3 style="background-color: white; font-weight: 600; color: #028A85; font-size: 18px; text-transform: uppercase;"
+                            class="p-3 rounded-pill px-4">
+                            Zaripov Botir Komilovich
+                        </h3>
+                        <p style="font-size: 18px;" class="px-4">Buxoro viloyati hokimi</p>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <ul class="nav nav-tabs nav-tabs-highlight nav-justified">
+                        <li class="nav-item">
+                            <a href="#justified-top-icon-tab3" class="nav-link" data-toggle="tab">
+                                <div style="display: flex; justify-content: center; align-items: center; gap: 8px;">
+                                    <i class="icon-newspaper2" style="font-size: 24px;"></i>
+                                    <p class="m-0 p-0" style="font-size: 24px;">Vazifalari</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#justified-top-icon-tab4" class="nav-link active" data-toggle="tab">
+                                <div style="display: flex; justify-content: center; align-items: center; gap: 8px;">
+                                    <i class="icon-magazine" style="font-size: 24px;"></i>
+                                    <p class="m-0 p-0" style="font-size: 24px;">Biografiyasi</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade" id="justified-top-icon-tab3">
+                            To use in tabs with equal widths add <code>.nav-justified</code> and icon markup to the tab
+                            nav.
+                        </div>
+
+                        <div class="tab-pane fade active show" id="justified-top-icon-tab4">
+                            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid
+                            laeggin.
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
+
+
     </main>
 
     <div class="footer-main mt-4 p-4">

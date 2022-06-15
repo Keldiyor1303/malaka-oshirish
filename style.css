@@ -59,12 +59,20 @@ body::-webkit-scrollbar {
     height: 120px;
 }
 
-.direction:hover,
+.directions>div {
+    transition: .3s;
+    cursor: pointer;
+}
+
 .directions>div:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(-10px);
+    background-color: #deeceb !important;
+    color: #45748a !important;
 }
 
 .direction:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: rgba(2, 138, 133, 0.2);
     transform: translateY(-10px);
 }
@@ -148,4 +156,14 @@ body::-webkit-scrollbar {
 .slick-slide img {
     width: 100%;
     border: 0px solid #fff;
+}
+
+.rahbariyat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.yunalish {
+    font-size: 18px;
 }
