@@ -7,7 +7,12 @@
 body {
     overflow: auto;
     padding: 0 50px;
+    background-image: url('./images/fon.png');
     font-family: 'Poppins', sans-serif;
+}
+
+.asosiy {
+    background-color: #E5E5E5;
 }
 
 body::-webkit-scrollbar {
